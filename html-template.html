@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$title$</title>
+    $if(css)$
+    <link rel="stylesheet" type="text/css" href="$css$">
+    $endif$
+</head>
+<body>
+    $if(title)$
+    <h1 class="title">$title$</h1>
+    $endif$
+
+    $if(toc)$
+    <div class="table-of-contents">
+        $toc$
+    </div>
+    $endif$
+
+    <!-- Hier wird der Hauptinhalt des Dokuments eingefügt -->
+    $body$
+
+    $for(header-includes)$
+    $header-includes$
+    $endfor$
+</body>
+</html>

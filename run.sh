@@ -1,0 +1,1 @@
+pandoc -s readme.md --template html-template.html --css ./html-template.css -o ./output/index.html
